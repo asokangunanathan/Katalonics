@@ -30,5 +30,5 @@ fi
 echo "e = ${e}"
 echo "b = ${b}"
 
-docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Functional Tests/my_functional_tests" -executionProfile=$e
+docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Functional Tests/my_functional_tests" -executionProfile=$e -apiKey=682655bd-d528-4258-8280-9bfb1883ca97
 	

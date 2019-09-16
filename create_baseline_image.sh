@@ -56,10 +56,10 @@ echo "r = ${r}"
 # If run type is All then run docker script with Katalon Test suite for for All component data else run the Katalon Test Suite for single component (passing in the component name and component location as global variables)
 case $r in
 	All)
-		docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image_ALL" -executionProfile=$e
+		docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image_ALL" -executionProfile=$e -apiKey=682655bd-d528-4258-8280-9bfb1883ca97
 		;;
 	Single)
-		docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image" -g_componentName=$c -g_componentLocation=$l -executionProfile=$e
+		docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image" -g_componentName=$c -g_componentLocation=$l -executionProfile=$e -apiKey=682655bd-d528-4258-8280-9bfb1883ca97
 		;;
 	*)
 		usage
