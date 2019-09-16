@@ -58,7 +58,7 @@ select opt in "${options[@]}"
 do
     case $opt in
         "All Component Data")
-            docker run -t --rm --net=host -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test_ALL" -executionProfile=$environment -apiKey=0d1e42f3-36e5-4cdd-b8f8-c780b45356ea
+            docker run -t --rm --net=host -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test_ALL" -executionProfile=$environment
             break
             ;;
         "Individual Component")	
@@ -66,7 +66,7 @@ do
 			read component_name
 			echo "Enter Component Location:"
 			read component_location
-			docker run -t --rm --net=host -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test" -g_componentName=$component_name -g_componentLocation=$component_location -executionProfile=$environment -apiKey=0d1e42f3-36e5-4cdd-b8f8-c780b45356ea
+			docker run -t --rm --net=host -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test" -g_componentName=$component_name -g_componentLocation=$component_location -executionProfile=$environment
 			break
             ;;
         "Quit")
