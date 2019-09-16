@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Baseline Analysis</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd123809-9f1c-4794-be54-8fb395dd0665</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.componentName</defaultValue>
+      <description></description>
+      <id>e1487eaf-633d-4b71-b89b-49da1b3d6eaf</id>
+      <masked>false</masked>
+      <name>componentName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.componentLocation</defaultValue>
+      <description></description>
+      <id>5e6dfab3-1130-47a7-8d7f-f06d40a12ceb</id>
+      <masked>false</masked>
+      <name>componentLocation</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.acceptableDiff</defaultValue>
+      <description>Acceptable Difference in Percentage</description>
+      <id>246fabd7-93dd-4cab-b735-633509d748a9</id>
+      <masked>false</masked>
+      <name>acceptableDiff</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.baseLineImageFolder</defaultValue>
+      <description></description>
+      <id>6566affb-1d7d-42b9-90ad-f5544b333be0</id>
+      <masked>false</masked>
+      <name>baseLineImageFolder</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.screenShotFolder</defaultValue>
+      <description></description>
+      <id>f68ec8a7-4233-4a05-9fae-7d4aefc34be8</id>
+      <masked>false</masked>
+      <name>screenShotFolder</name>
+   </variable>
+</TestCaseEntity>

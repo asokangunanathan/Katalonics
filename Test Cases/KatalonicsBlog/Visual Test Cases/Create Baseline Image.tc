@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Baseline Image</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dbddb85f-e6fc-4640-8a0a-0136914eeeeb</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.componentName</defaultValue>
+      <description></description>
+      <id>e1487eaf-633d-4b71-b89b-49da1b3d6eaf</id>
+      <masked>false</masked>
+      <name>componentName</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.componentLocation</defaultValue>
+      <description></description>
+      <id>5e6dfab3-1130-47a7-8d7f-f06d40a12ceb</id>
+      <masked>false</masked>
+      <name>componentLocation</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.acceptableDiff</defaultValue>
+      <description>Acceptable Difference in Percentage</description>
+      <id>246fabd7-93dd-4cab-b735-633509d748a9</id>
+      <masked>false</masked>
+      <name>acceptableDiff</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.baseLineImageFolder</defaultValue>
+      <description></description>
+      <id>ebaf7b21-dea3-41a2-8d87-b8648300d516</id>
+      <masked>false</masked>
+      <name>baseLineImageFolder</name>
+   </variable>
+</TestCaseEntity>

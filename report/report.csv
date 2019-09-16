@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+my_functional_tests,Chrome 75.0.3770.100,,,2019-09-16 17:58:58,2019-09-16 17:59:03,4.252s,INCOMPLETE
+,,,,,,,
+Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test,Chrome 75.0.3770.100,,,2019-09-16 17:58:59,2019-09-16 17:59:03,4.037s,PASSED
+Start listener action : beforeTestCase,Chrome 75.0.3770.100,,,2019-09-16 17:58:59,2019-09-16 17:58:59,0.400s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,,2019-09-16 17:58:59,2019-09-16 17:59:01,1.860s,PASSED
+"navigateToUrl(""https://katalonics.blogspot.com/"")",Chrome 75.0.3770.100,,,2019-09-16 17:59:01,2019-09-16 17:59:02,0.730s,PASSED
+"setText(findTestObject(""Page_Katalonics/input_Search This Blog_q""), ""test"")",Chrome 75.0.3770.100,,,2019-09-16 17:59:02,2019-09-16 17:59:02,0.149s,PASSED
+"click(findTestObject(""Object Repository/Page_Katalonics/div_Search This BlogHomeInstall""))",Chrome 75.0.3770.100,,,2019-09-16 17:59:02,2019-09-16 17:59:02,0.087s,PASSED
+"click(findTestObject(""Object Repository/Page_Katalonics/input_Search This Blog_gsc-search-button""))",Chrome 75.0.3770.100,,,2019-09-16 17:59:02,2019-09-16 17:59:03,0.526s,PASSED
+"click(findTestObject(""Object Repository/Page_Katalonics Search results for test/div_No posts matching the query test Show all posts""))",Chrome 75.0.3770.100,,,2019-09-16 17:59:03,2019-09-16 17:59:03,0.073s,PASSED
+closeBrowser(),Chrome 75.0.3770.100,,,2019-09-16 17:59:03,2019-09-16 17:59:03,0.079s,PASSED

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>create_baseline_image_ALL</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>eb3c1a4f-98c8-4788-92c9-214167b09644</testSuiteGuid>
+   <testCaseLink>
+      <guid>2a70598d-2cb2-4760-bbc6-0322c9f36832</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/KatalonicsBlog/Visual Test Cases/Create Baseline Image</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>a0f6212b-e819-44de-8545-aff7241032cd</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/All Location Data</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>a0f6212b-e819-44de-8545-aff7241032cd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>componentName</value>
+         <variableId>e1487eaf-633d-4b71-b89b-49da1b3d6eaf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a0f6212b-e819-44de-8545-aff7241032cd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>componentLocation</value>
+         <variableId>5e6dfab3-1130-47a7-8d7f-f06d40a12ceb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a0f6212b-e819-44de-8545-aff7241032cd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>acceptableDiff</value>
+         <variableId>246fabd7-93dd-4cab-b735-633509d748a9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ebaf7b21-dea3-41a2-8d87-b8648300d516</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

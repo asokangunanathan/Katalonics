@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>ssr</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Number of runs of test cases including re-runs</description>
+      <initValue>[('sample') : 0]</initValue>
+      <name>NUMBER_OF_TESTCASE_RUNS</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>CURRENT_TESTCASE_ID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1024</initValue>
+      <name>viewPortWidth</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>768</initValue>
+      <name>viewPortHeight</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Acceptable percentage for image difference</description>
+      <initValue>'0.0'</initValue>
+      <name>acceptableDiff</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Environment 1</description>
+      <initValue>'https://katalonics.blogspot.com/'</initValue>
+      <name>envURL1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Environment 2</description>
+      <initValue>'https://katalonics.blogspot.com/'</initValue>
+      <name>envURL2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>default</description>
+      <initValue>''</initValue>
+      <name>componentName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>default</description>
+      <initValue>''</initValue>
+      <name>componentLocation</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>default folder for Baseline Images</description>
+      <initValue>'Baseline_Images'</initValue>
+      <name>baseLineImageFolder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>default Screenshot folder</description>
+      <initValue>'Screenshots'</initValue>
+      <name>screenShotFolder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>To append any flags</description>
+      <initValue>''</initValue>
+      <name>appendToURL</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
