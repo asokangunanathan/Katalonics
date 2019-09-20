@@ -1,185 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<testsuites name="baseline_test" time="14" tests="1" failures="0" errors="0">
-    <testsuite name="baseline_test" tests="1" failures="0" errors="0" time="14" timestamp="2019-09-20 17:04:43" hostname="Unknow host" id="Test Suites/Visual BaseLine Analysis/baseline_test">
+<testsuites name="my_functional_tests" time="5" tests="1" failures="0" errors="0">
+    <testsuite name="my_functional_tests" tests="1" failures="0" errors="0" time="5" timestamp="2019-09-20 17:09:31" hostname="root - 8a2214b6365f" id="Test Suites/Functional Tests/my_functional_tests">
         <properties>
             <property name="deviceName" value=""/>
             <property name="devicePlatform" value=""/>
-            <property name="logFolder" value="/tmp/katalon_execute/project/Reports/Visual BaseLine Analysis/baseline_test/20190920_170439"/>
-            <property name="logFiles" value="/tmp/katalon_execute/project/Reports/Visual BaseLine Analysis/baseline_test/20190920_170439/execution0.log"/>
+            <property name="logFolder" value="/tmp/katalon_execute/project/Reports/Functional Tests/my_functional_tests/20190920_170928"/>
+            <property name="logFiles" value="/tmp/katalon_execute/project/Reports/Functional Tests/my_functional_tests/20190920_170928/execution0.log"/>
             <property name="attachments" value=""/>
-            <property name="hostName" value="Unknow host"/>
+            <property name="hostName" value="root - 8a2214b6365f"/>
             <property name="os" value="Linux 64bit"/>
             <property name="katalonVersion" value="6.2.2.4"/>
             <property name="browser" value="Chrome 75.0.3770.100"/>
-            <property name="hostAddress" value="127.0.0.1"/>
-            <property name="sessionId" value="923ce80f756c73e32af6bd5640f22aaa"/>
+            <property name="hostAddress" value="172.17.0.2"/>
+            <property name="sessionId" value="3e0923976149086825f326b65e64a5cd"/>
             <property name="seleniumVersion" value="3.141.59"/>
             <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
             <property name="platform" value="Linux"/>
         </properties>
-        <testcase name="Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis" classname="Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis" status="PASSED">
-            <system-out>2019-09-20 17:04:43 - [TEST_CASE][PASSED] - Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis: Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis
+        <testcase name="Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test" classname="Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test" status="PASSED">
+            <system-out>2019-09-20 17:09:32 - [TEST_CASE][PASSED] - Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test: Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: null
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: null
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - testCaseId = testCaseContext.getTestCaseId(): null
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - comment(&gt;&gt;&gt; testCaseId is $testCaseId): &gt;&gt;&gt; testCaseId is Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - comment(&gt;&gt;&gt; testCaseId is $testCaseId): &gt;&gt;&gt; testCaseId is Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test
 
-2019-09-20 17:04:44 - [MESSAGE][INFO] - &gt;&gt;&gt; testCaseId is Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis
+2019-09-20 17:09:32 - [MESSAGE][INFO] - &gt;&gt;&gt; testCaseId is Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - CURRENT_TESTCASE_ID = testCaseId: null
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - CURRENT_TESTCASE_ID = testCaseId: null
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - runsRecord = NUMBER_OF_TESTCASE_RUNS: null
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - runsRecord = NUMBER_OF_TESTCASE_RUNS: null
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - if (runsRecord.containsKey(testCaseId)): null
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - if (runsRecord.containsKey(testCaseId)): null
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - else: null
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - else: null
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - comment(&gt;&gt;&gt; runRecrod does not contain key $testCaseId): &gt;&gt;&gt; runRecrod does not contain key Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - comment(&gt;&gt;&gt; runRecrod does not contain key $testCaseId): &gt;&gt;&gt; runRecrod does not contain key Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test
 
-2019-09-20 17:04:44 - [MESSAGE][INFO] - &gt;&gt;&gt; runRecrod does not contain key Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis
+2019-09-20 17:09:32 - [MESSAGE][INFO] - &gt;&gt;&gt; runRecrod does not contain key Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - runsRecord.put(testCaseId, 1): null
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - runsRecord.put(testCaseId, 1): null
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - NUMBER_OF_TESTCASE_RUNS = runsRecord: null
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - NUMBER_OF_TESTCASE_RUNS = runsRecord: null
 
-2019-09-20 17:04:44 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+2019-09-20 17:09:32 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
 
-2019-09-20 17:04:44 - [MESSAGE][INFO] - Starting 'Chrome' driver
+2019-09-20 17:09:32 - [MESSAGE][INFO] - Starting 'Chrome' driver
 
-2019-09-20 17:04:44 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+2019-09-20 17:09:33 - [MESSAGE][INFO] - Action delay is set to 0 seconds
 
-2019-09-20 17:04:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+2019-09-20 17:09:34 - [MESSAGE][PASSED] - Browser is opened with url: ''
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - browserName = getExecutedBrowser().getName(): null
+2019-09-20 17:09:34 - [TEST_STEP][PASSED] - navigateToUrl("https://katalonics.blogspot.com/"): Navigate to 'https://katalonics.blogspot.com/' successfully
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - scrollTimeout = 100: null
+2019-09-20 17:09:35 - [MESSAGE][PASSED] - Navigate to 'https://katalonics.blogspot.com/' successfully
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - header = 0: null
+2019-09-20 17:09:35 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Katalonics/input_Search This Blog_q"), "test"): Text 'test' is set on object 'Object Repository/Page_Katalonics/input_Search This Blog_q'
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - footer = 0: null
+2019-09-20 17:09:36 - [MESSAGE][PASSED] - Text 'test' is set on object 'Object Repository/Page_Katalonics/input_Search This Blog_q'
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - dpr = 2: null
+2019-09-20 17:09:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Katalonics/div_Search This BlogHomeInstall")): Object: 'Object Repository/Page_Katalonics/div_Search This BlogHomeInstall' is clicked on
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - if (browserName == "IOS_DRIVER"): null
+2019-09-20 17:09:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Katalonics/div_Search This BlogHomeInstall' is clicked on
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - if (browserName == "ANDROID_DRIVER"): null
+2019-09-20 17:09:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Katalonics/input_Search This Blog_gsc-search-button")): Object: 'Object Repository/Page_Katalonics/input_Search This Blog_gsc-search-button' is clicked on
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - if (browserName != "IOS_DRIVER" &amp;&amp; browserName != "ANDROID_DRIVER"): Current window maximized
+2019-09-20 17:09:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Katalonics/input_Search This Blog_gsc-search-button' is clicked on
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+2019-09-20 17:09:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Katalonics Search results for test/div_No posts matching the query test Show all posts")): Object: 'Object Repository/Page_Katalonics Search results for test/div_No posts matching the query test Show all posts' is clicked on
 
-2019-09-20 17:04:48 - [MESSAGE][PASSED] - Current window maximized
+2019-09-20 17:09:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Katalonics Search results for test/div_No posts matching the query test Show all posts' is clicked on
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - actualComponentURL = envURL1 + componentLocation + "/" + componentName + appendToURL: null
+2019-09-20 17:09:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
 
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - log = new com.kms.katalon.core.logging.KeywordLogger(): null
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - log.logInfo("Component Name: " + componentName): Component Name: my-examples
-
-2019-09-20 17:04:48 - [MESSAGE][INFO] - Component Name: my-examples
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - log.logInfo("actual URL: " + actualComponentURL): actual URL: https://katalonics.blogspot.com/p/my-examples.html
-
-2019-09-20 17:04:48 - [MESSAGE][INFO] - actual URL: https://katalonics.blogspot.com/p/my-examples.html
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - baseLineFile = resolveScreenshotFile($browserName + "_" + $componentName + "_baseLine_component_page.png", $baseLineImageFolder): null
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - projectDir = Paths.get(getProjectDir()): null
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - reportDir = projectDir.resolve(folderName): null
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - Files.createDirectories(reportDir): null
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - pngFile = reportDir.resolve(fileName): null
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - return pngFile.toFile(): null
-
-2019-09-20 17:04:48 - [TEST_STEP][PASSED] - navigateToUrl(actualComponentURL): Navigate to 'https://katalonics.blogspot.com/p/my-examples.html' successfully
-
-2019-09-20 17:04:49 - [MESSAGE][PASSED] - Navigate to 'https://katalonics.blogspot.com/p/my-examples.html' successfully
-
-2019-09-20 17:04:49 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
-
-2019-09-20 17:04:49 - [MESSAGE][PASSED] - Wait for page load successfully
-
-2019-09-20 17:04:49 - [TEST_STEP][PASSED] - delay(6): Delayed 6 second(s)
-
-2019-09-20 17:04:55 - [MESSAGE][PASSED] - Delayed 6 second(s)
-
-2019-09-20 17:04:55 - [TEST_STEP][PASSED] - actualFile = resolveScreenshotFile($browserName + "_" + $componentName + "_actual_component_page.png", $screenShotFolder): null
-
-2019-09-20 17:04:55 - [TEST_STEP][PASSED] - projectDir = Paths.get(getProjectDir()): null
-
-2019-09-20 17:04:55 - [TEST_STEP][PASSED] - reportDir = projectDir.resolve(folderName): null
-
-2019-09-20 17:04:55 - [TEST_STEP][PASSED] - Files.createDirectories(reportDir): null
-
-2019-09-20 17:04:55 - [TEST_STEP][PASSED] - pngFile = reportDir.resolve(fileName): null
-
-2019-09-20 17:04:55 - [TEST_STEP][PASSED] - return pngFile.toFile(): null
-
-2019-09-20 17:04:55 - [TEST_STEP][PASSED] - takeEntirePage(getWebDriver(), actualFile, 500, scrollTimeout, header, footer, dpr): null
-
-2019-09-20 17:04:55 - [TEST_STEP][PASSED] - screenshot = viewportRetina(scrollTimeout, header, footer, dpr)).takeScreenshot(webDriver): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - ImageIO.write(screenshot.getImage(), "PNG", file): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - comment(&gt;&gt;&gt; wrote the actual component page image into $actualFile.toString()): &gt;&gt;&gt; wrote the actual component page image into /tmp/katalon_execute/project/Screenshots/CHROME_DRIVER_my-examples_actual_component_page.png
-
-2019-09-20 17:04:57 - [MESSAGE][INFO] - &gt;&gt;&gt; wrote the actual component page image into /tmp/katalon_execute/project/Screenshots/CHROME_DRIVER_my-examples_actual_component_page.png
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - expectedImage = ImageIO.read(baseLineFile): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - actualImage = ImageIO.read(actualFile): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - expectedScreenshot = new ru.yandex.qatools.ashot.Screenshot(expectedImage): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - actualScreenshot = new ru.yandex.qatools.ashot.Screenshot(actualImage): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - diff = ImageDiffer().makeDiff(expectedScreenshot, actualScreenshot): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - markedImage = diff.getMarkedImage(): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - dformat = new java.text.DecimalFormat(##0.00): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - criteriaPercent = Double.parseDouble(acceptableDiff): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - diffRatioPercent = diffRatioPercent(diff): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - hasDiff = diff.hasDiff(): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - if (!(hasDiff)): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - return 0.0: null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - if (diffRatioPercent &gt; criteriaPercent): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - diffFile = resolveScreenshotFile($browserName + "_" + $componentName + _component_imageDiff($dformat.format(diffRatioPercent)).png, $screenShotFolder): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - projectDir = Paths.get(getProjectDir()): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - reportDir = projectDir.resolve(folderName): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - Files.createDirectories(reportDir): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - pngFile = reportDir.resolve(fileName): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - return pngFile.toFile(): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - ImageIO.write(markedImage, "PNG", diffFile): null
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - comment(&gt;&gt;&gt; wrote the ImageDiff into $diffFile.toString()): &gt;&gt;&gt; wrote the ImageDiff into /tmp/katalon_execute/project/Screenshots/CHROME_DRIVER_my-examples_component_imageDiff(0.00).png
-
-2019-09-20 17:04:57 - [MESSAGE][INFO] - &gt;&gt;&gt; wrote the ImageDiff into /tmp/katalon_execute/project/Screenshots/CHROME_DRIVER_my-examples_component_imageDiff(0.00).png
-
-2019-09-20 17:04:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
-
-2019-09-20 17:04:57 - [MESSAGE][PASSED] - Browser is closed</system-out>
+2019-09-20 17:09:37 - [MESSAGE][PASSED] - Browser is closed</system-out>
             <system-err></system-err>
         </testcase>
-        <system-out>2019-09-20 17:04:43 - [TEST_SUITE][INCOMPLETE] - baseline_test: null</system-out>
-        <system-err>2019-09-20 17:04:43 - [TEST_SUITE][INCOMPLETE] - baseline_test: null</system-err>
+        <system-out>2019-09-20 17:09:31 - [TEST_SUITE][INCOMPLETE] - my_functional_tests: null</system-out>
+        <system-err>2019-09-20 17:09:31 - [TEST_SUITE][INCOMPLETE] - my_functional_tests: null</system-err>
     </testsuite>
 </testsuites>
