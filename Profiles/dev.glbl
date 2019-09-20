@@ -61,7 +61,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>To append any flags</description>
-      <initValue>''</initValue>
+      <initValue>'.html'</initValue>
       <name>appendToURL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

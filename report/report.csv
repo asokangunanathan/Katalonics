@@ -1,12 +1,58 @@
 Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-my_functional_tests,Chrome 75.0.3770.100,,,2019-09-16 19:26:32,2019-09-16 19:26:37,4.933s,INCOMPLETE
+baseline_test,Chrome 75.0.3770.100,,,2019-09-20 17:04:43,2019-09-20 17:04:57,14.743s,INCOMPLETE
 ,,,,,,,
-Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test,Chrome 75.0.3770.100,,,2019-09-16 19:26:33,2019-09-16 19:26:37,4.552s,PASSED
-Start listener action : beforeTestCase,Chrome 75.0.3770.100,,,2019-09-16 19:26:33,2019-09-16 19:26:33,0.489s,PASSED
-"openBrowser("""")",Chrome 75.0.3770.100,,,2019-09-16 19:26:33,2019-09-16 19:26:35,1.907s,PASSED
-"navigateToUrl(""https://katalonics.blogspot.com/"")",Chrome 75.0.3770.100,,,2019-09-16 19:26:35,2019-09-16 19:26:36,0.881s,PASSED
-"setText(findTestObject(""Page_Katalonics/input_Search This Blog_q""), ""test"")",Chrome 75.0.3770.100,,,2019-09-16 19:26:36,2019-09-16 19:26:36,0.204s,PASSED
-"click(findTestObject(""Object Repository/Page_Katalonics/div_Search This BlogHomeInstall""))",Chrome 75.0.3770.100,,,2019-09-16 19:26:36,2019-09-16 19:26:36,0.098s,PASSED
-"click(findTestObject(""Object Repository/Page_Katalonics/input_Search This Blog_gsc-search-button""))",Chrome 75.0.3770.100,,,2019-09-16 19:26:36,2019-09-16 19:26:37,0.571s,PASSED
-"click(findTestObject(""Object Repository/Page_Katalonics Search results for test/div_No posts matching the query test Show all posts""))",Chrome 75.0.3770.100,,,2019-09-16 19:26:37,2019-09-16 19:26:37,0.106s,PASSED
-closeBrowser(),Chrome 75.0.3770.100,,,2019-09-16 19:26:37,2019-09-16 19:26:37,0.080s,PASSED
+Test Cases/KatalonicsBlog/Visual Test Cases/Baseline Analysis,Chrome 75.0.3770.100,,,2019-09-20 17:04:43,2019-09-20 17:04:57,14.317s,PASSED
+Start listener action : beforeTestCase,Chrome 75.0.3770.100,,,2019-09-20 17:04:44,2019-09-20 17:04:44,0.122s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,,2019-09-20 17:04:44,2019-09-20 17:04:48,3.431s,PASSED
+browserName = getExecutedBrowser().getName(),Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.021s,PASSED
+scrollTimeout = 100,Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.001s,PASSED
+header = 0,Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.002s,PASSED
+footer = 0,Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.002s,PASSED
+dpr = 2,Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.002s,PASSED
+"if (browserName == ""IOS_DRIVER"")",Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.001s,PASSED
+"if (browserName == ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.001s,PASSED
+"if (browserName != ""IOS_DRIVER"" && browserName != ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.139s,PASSED
+"actualComponentURL = envURL1 + componentLocation + ""/"" + componentName + appendToURL",Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.002s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.002s,PASSED
+"log.logInfo(""Component Name: "" + componentName)",Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.003s,PASSED
+"log.logInfo(""actual URL: "" + actualComponentURL)",Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.004s,PASSED
+"baseLineFile = resolveScreenshotFile($browserName + ""_"" + $componentName + ""_baseLine_component_page.png"", $baseLineImageFolder)",Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.009s,PASSED
+projectDir = Paths.get(getProjectDir()),Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.004s,PASSED
+reportDir = projectDir.resolve(folderName),Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.002s,PASSED
+Files.createDirectories(reportDir),Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.005s,PASSED
+pngFile = reportDir.resolve(fileName),Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.004s,PASSED
+return pngFile.toFile(),Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:48,0.002s,PASSED
+navigateToUrl(actualComponentURL),Chrome 75.0.3770.100,,,2019-09-20 17:04:48,2019-09-20 17:04:49,1.206s,PASSED
+waitForPageLoad(5),Chrome 75.0.3770.100,,,2019-09-20 17:04:49,2019-09-20 17:04:49,0.093s,PASSED
+delay(6),Chrome 75.0.3770.100,,,2019-09-20 17:04:49,2019-09-20 17:04:55,5.981s,PASSED
+"actualFile = resolveScreenshotFile($browserName + ""_"" + $componentName + ""_actual_component_page.png"", $screenShotFolder)",Chrome 75.0.3770.100,,,2019-09-20 17:04:55,2019-09-20 17:04:55,0.001s,PASSED
+projectDir = Paths.get(getProjectDir()),Chrome 75.0.3770.100,,,2019-09-20 17:04:55,2019-09-20 17:04:55,0.002s,PASSED
+reportDir = projectDir.resolve(folderName),Chrome 75.0.3770.100,,,2019-09-20 17:04:55,2019-09-20 17:04:55,0.002s,PASSED
+Files.createDirectories(reportDir),Chrome 75.0.3770.100,,,2019-09-20 17:04:55,2019-09-20 17:04:55,0.003s,PASSED
+pngFile = reportDir.resolve(fileName),Chrome 75.0.3770.100,,,2019-09-20 17:04:55,2019-09-20 17:04:55,0.001s,PASSED
+return pngFile.toFile(),Chrome 75.0.3770.100,,,2019-09-20 17:04:55,2019-09-20 17:04:55,0.001s,PASSED
+"takeEntirePage(getWebDriver(), actualFile, 500, scrollTimeout, header, footer, dpr)",Chrome 75.0.3770.100,,,2019-09-20 17:04:55,2019-09-20 17:04:55,0.007s,PASSED
+"screenshot = viewportRetina(scrollTimeout, header, footer, dpr)).takeScreenshot(webDriver)",Chrome 75.0.3770.100,,,2019-09-20 17:04:55,2019-09-20 17:04:57,1.419s,PASSED
+"ImageIO.write(screenshot.getImage(), ""PNG"", file)",Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.342s,PASSED
+comment(>>> wrote the actual component page image into $actualFile.toString()),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.008s,PASSED
+expectedImage = ImageIO.read(baseLineFile),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.046s,PASSED
+actualImage = ImageIO.read(actualFile),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.032s,PASSED
+expectedScreenshot = new ru.yandex.qatools.ashot.Screenshot(expectedImage),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.001s,PASSED
+actualScreenshot = new ru.yandex.qatools.ashot.Screenshot(actualImage),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.002s,PASSED
+"diff = ImageDiffer().makeDiff(expectedScreenshot, actualScreenshot)",Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.042s,PASSED
+markedImage = diff.getMarkedImage(),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.006s,PASSED
+dformat = new java.text.DecimalFormat(##0.00),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.011s,PASSED
+criteriaPercent = Double.parseDouble(acceptableDiff),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.007s,PASSED
+diffRatioPercent = diffRatioPercent(diff),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.002s,PASSED
+hasDiff = diff.hasDiff(),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.002s,PASSED
+if (!(hasDiff)),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.003s,PASSED
+if (diffRatioPercent > criteriaPercent),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.001s,PASSED
+"diffFile = resolveScreenshotFile($browserName + ""_"" + $componentName + _component_imageDiff($dformat.format(diffRatioPercent)).png, $screenShotFolder)",Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.003s,PASSED
+projectDir = Paths.get(getProjectDir()),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.001s,PASSED
+reportDir = projectDir.resolve(folderName),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.001s,PASSED
+Files.createDirectories(reportDir),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.002s,PASSED
+pngFile = reportDir.resolve(fileName),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.001s,PASSED
+return pngFile.toFile(),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.001s,PASSED
+"ImageIO.write(markedImage, ""PNG"", diffFile)",Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.235s,PASSED
+comment(>>> wrote the ImageDiff into $diffFile.toString()),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.003s,PASSED
+closeBrowser(),Chrome 75.0.3770.100,,,2019-09-20 17:04:57,2019-09-20 17:04:57,0.083s,PASSED

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-set -xe
+#set -xe
+# Read Api Key needed to integrate Katalon with Slack and other pluggins
+file="slack_apiKey" # File where the slack Api Key is stored
+slack_apiKey=$(cat "$file")   #the output of 'cat $file' is assigned to the slack_apiKey variable
 
 # Ask user to select browser
 PS3='Create Baseline Image:  Choose Browser: '
@@ -58,7 +61,13 @@ select opt in "${options[@]}"
 do
     case $opt in
         "All Component Data")
-            docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image_ALL" -executionProfile=$environment -apiKey=682655bd-d528-4258-8280-9bfb1883ca97
+				echo -n "!!! Are you sure you want to Run for All Components? (y/n)? !!!"
+				read answer
+				if [ "$answer" != "${answer#[Yy]}" ] ;then
+    				docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image_ALL" -executionProfile=$environment -apiKey=$slack_apiKey
+				else
+    				echo "Exiting..."
+				fi
             break
             ;;
         "Individual Component")	
@@ -66,7 +75,7 @@ do
 			read component_name
 			echo "Enter Component Location:"
 			read component_location
-			docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image" -g_componentName=$component_name -g_componentLocation=$component_location -executionProfile=$environment -apiKey=682655bd-d528-4258-8280-9bfb1883ca97
+			docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image" -g_componentName=$component_name -g_componentLocation=$component_location -executionProfile=$environment -apiKey=$slack_apiKey
 			break
             ;;
         "Quit")

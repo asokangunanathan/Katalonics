@@ -1,4 +1,7 @@
 #!/bin/bash
+# Read Api Key needed to integrate Katalon with Slack and other pluggins
+file="slack_apiKey" # File where the slack Api Key is stored
+slack_apiKey=$(cat "$file")   #the output of 'cat $file' is assigned to the slack_apiKey variable
 
 # Read Command Line Arguments and show usage information if the arguments are passed in wrong (Two usage messsages depending on if the user
 # is running the command using -r All or -r Single
@@ -55,10 +58,10 @@ echo "r = ${r}"
 # If run type is All then run docker script with Katalon Test suite for for All component data else run the Katalon Test Suite for single component (passing in the component name and component location as global variables)
 case $r in
 	All)
-		docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test_ALL" -executionProfile=$e -apiKey=682655bd-d528-4258-8280-9bfb1883ca97
+		docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test_ALL" -executionProfile=$e -apiKey=$slack_apiKey
 		;;
 	Single)
-		docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test" -g_componentName=$c -g_componentLocation=$l -executionProfile=$e -apiKey=682655bd-d528-4258-8280-9bfb1883ca97
+		docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$b -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test" -g_componentName=$c -g_componentLocation=$l -executionProfile=$e -apiKey=$slack_apiKey
 		;;
 	*)
 		usage
