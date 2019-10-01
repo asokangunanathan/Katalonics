@@ -65,7 +65,7 @@ do
 				echo -n "!!! Are you sure you want to Run for All Components? (y/n)? !!!"
 				read answer
 				if [ "$answer" != "${answer#[Yy]}" ] ;then
-    				docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/create_baseline_image_ALL" -executionProfile=$environment -apiKey=$slack_apiKey
+    				docker run -t --rm -v "$(pwd)":/tmp/source -w /tmp/source -v "$(pwd)/Screenshots":/tmp/katalon_execute/project/Screenshots -v "$(pwd)/Baseline_Images":/tmp/katalon_execute/project/Baseline_Images katalonstudio/katalon katalon-execute.sh -browserType=$browserName -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Visual BaseLine Analysis/baseline_test_ALL" -executionProfile=$environment -apiKey=$slack_apiKey
 				else
     				echo "Exiting..."
 				fi

@@ -1,12 +1,122 @@
 Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-my_functional_tests,Chrome 75.0.3770.100,,,2019-09-20 17:09:31,2019-09-20 17:09:37,5.505s,INCOMPLETE
+create_baseline_image_ALL,Chrome 75.0.3770.100,,,2019-10-01 15:05:20,2019-10-01 15:05:58,38.901s,INCOMPLETE
 ,,,,,,,
-Test Cases/KatalonicsBlog/Functional Test Cases/search_for_test,Chrome 75.0.3770.100,,,2019-09-20 17:09:32,2019-09-20 17:09:37,5.179s,PASSED
-Start listener action : beforeTestCase,Chrome 75.0.3770.100,,,2019-09-20 17:09:32,2019-09-20 17:09:32,0.489s,PASSED
-"openBrowser("""")",Chrome 75.0.3770.100,,,2019-09-20 17:09:32,2019-09-20 17:09:34,2.156s,PASSED
-"navigateToUrl(""https://katalonics.blogspot.com/"")",Chrome 75.0.3770.100,,,2019-09-20 17:09:34,2019-09-20 17:09:35,1.012s,PASSED
-"setText(findTestObject(""Page_Katalonics/input_Search This Blog_q""), ""test"")",Chrome 75.0.3770.100,,,2019-09-20 17:09:35,2019-09-20 17:09:36,0.226s,PASSED
-"click(findTestObject(""Object Repository/Page_Katalonics/div_Search This BlogHomeInstall""))",Chrome 75.0.3770.100,,,2019-09-20 17:09:36,2019-09-20 17:09:36,0.111s,PASSED
-"click(findTestObject(""Object Repository/Page_Katalonics/input_Search This Blog_gsc-search-button""))",Chrome 75.0.3770.100,,,2019-09-20 17:09:36,2019-09-20 17:09:37,0.791s,PASSED
-"click(findTestObject(""Object Repository/Page_Katalonics Search results for test/div_No posts matching the query test Show all posts""))",Chrome 75.0.3770.100,,,2019-09-20 17:09:37,2019-09-20 17:09:37,0.103s,PASSED
-closeBrowser(),Chrome 75.0.3770.100,,,2019-09-20 17:09:37,2019-09-20 17:09:37,0.082s,PASSED
+Test Cases/KatalonicsBlog/Visual Test Cases/Create Baseline Image,Chrome 75.0.3770.100,,,2019-10-01 15:05:20,2019-10-01 15:05:32,11.975s,PASSED
+Start listener action : beforeTestCase,Chrome 75.0.3770.100,,,2019-10-01 15:05:20,2019-10-01 15:05:20,0.123s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,,2019-10-01 15:05:21,2019-10-01 15:05:23,1.967s,PASSED
+browserName = getExecutedBrowser().getName(),Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.025s,PASSED
+scrollTimeout = 100,Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.001s,PASSED
+header = 0,Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.002s,PASSED
+footer = 0,Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.003s,PASSED
+dpr = 2,Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.001s,PASSED
+"if (browserName == ""IOS_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.001s,PASSED
+"if (browserName == ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.001s,PASSED
+"if (browserName != ""IOS_DRIVER"" && browserName != ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.151s,PASSED
+"theComponentURL = envURL1 + componentLocation + ""/"" + componentName + appendToURL",Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:23,0.003s,PASSED
+navigateToUrl(theComponentURL),Chrome 75.0.3770.100,,,2019-10-01 15:05:23,2019-10-01 15:05:24,0.880s,PASSED
+waitForPageLoad(5),Chrome 75.0.3770.100,,,2019-10-01 15:05:24,2019-10-01 15:05:24,0.090s,PASSED
+delay(6),Chrome 75.0.3770.100,,,2019-10-01 15:05:24,2019-10-01 15:05:30,6.010s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.002s,PASSED
+"log.logInfo(""Component Name: "" + componentName)",Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.004s,PASSED
+"log.logInfo(""actual URL: "" + theComponentURL)",Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.003s,PASSED
+"baseLineFile = resolveScreenshotFile($browserName + ""_"" + $componentName + ""_baseLine_component_page.png"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.007s,PASSED
+projectDir = Paths.get(getProjectDir()),Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.002s,PASSED
+reportDir = projectDir.resolve(baseLineImageFolder),Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.002s,PASSED
+Files.createDirectories(reportDir),Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.006s,PASSED
+pngFile = reportDir.resolve(fileName),Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.001s,PASSED
+return pngFile.toFile(),Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.003s,PASSED
+"takeEntirePage(getWebDriver(), baseLineFile, 500, scrollTimeout, header, footer, dpr)",Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:30,0.004s,PASSED
+"screenshot = viewportRetina(scrollTimeout, header, footer, dpr)).takeScreenshot(webDriver)",Chrome 75.0.3770.100,,,2019-10-01 15:05:30,2019-10-01 15:05:31,1.040s,PASSED
+"ImageIO.write(screenshot.getImage(), ""PNG"", file)",Chrome 75.0.3770.100,,,2019-10-01 15:05:31,2019-10-01 15:05:31,0.182s,PASSED
+comment(>>> wrote the baseLine component page image into $baseLineFile.toString()),Chrome 75.0.3770.100,,,2019-10-01 15:05:31,2019-10-01 15:05:31,0.015s,PASSED
+closeBrowser(),Chrome 75.0.3770.100,,,2019-10-01 15:05:31,2019-10-01 15:05:32,0.599s,PASSED
+,,,,,,,
+Test Cases/KatalonicsBlog/Visual Test Cases/Create Baseline Image,Chrome 75.0.3770.100,,,2019-10-01 15:05:32,2019-10-01 15:05:41,8.699s,PASSED
+Start listener action : beforeTestCase,Chrome 75.0.3770.100,,,2019-10-01 15:05:32,2019-10-01 15:05:32,0.022s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,,2019-10-01 15:05:32,2019-10-01 15:05:33,0.611s,PASSED
+browserName = getExecutedBrowser().getName(),Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.000s,PASSED
+scrollTimeout = 100,Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.001s,PASSED
+header = 0,Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.001s,PASSED
+footer = 0,Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.001s,PASSED
+dpr = 2,Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.001s,PASSED
+"if (browserName == ""IOS_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.001s,PASSED
+"if (browserName == ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.001s,PASSED
+"if (browserName != ""IOS_DRIVER"" && browserName != ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.136s,PASSED
+"theComponentURL = envURL1 + componentLocation + ""/"" + componentName + appendToURL",Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:33,0.001s,PASSED
+navigateToUrl(theComponentURL),Chrome 75.0.3770.100,,,2019-10-01 15:05:33,2019-10-01 15:05:34,1.056s,PASSED
+waitForPageLoad(5),Chrome 75.0.3770.100,,,2019-10-01 15:05:34,2019-10-01 15:05:34,0.063s,PASSED
+delay(6),Chrome 75.0.3770.100,,,2019-10-01 15:05:34,2019-10-01 15:05:40,6.005s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.001s,PASSED
+"log.logInfo(""Component Name: "" + componentName)",Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.002s,PASSED
+"log.logInfo(""actual URL: "" + theComponentURL)",Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.002s,PASSED
+"baseLineFile = resolveScreenshotFile($browserName + ""_"" + $componentName + ""_baseLine_component_page.png"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.001s,PASSED
+projectDir = Paths.get(getProjectDir()),Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.001s,PASSED
+reportDir = projectDir.resolve(baseLineImageFolder),Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.001s,PASSED
+Files.createDirectories(reportDir),Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.002s,PASSED
+pngFile = reportDir.resolve(fileName),Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.001s,PASSED
+return pngFile.toFile(),Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.000s,PASSED
+"takeEntirePage(getWebDriver(), baseLineFile, 500, scrollTimeout, header, footer, dpr)",Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.001s,PASSED
+"screenshot = viewportRetina(scrollTimeout, header, footer, dpr)).takeScreenshot(webDriver)",Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:40,0.529s,PASSED
+"ImageIO.write(screenshot.getImage(), ""PNG"", file)",Chrome 75.0.3770.100,,,2019-10-01 15:05:40,2019-10-01 15:05:41,0.144s,PASSED
+comment(>>> wrote the baseLine component page image into $baseLineFile.toString()),Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.004s,PASSED
+closeBrowser(),Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.075s,PASSED
+,,,,,,,
+Test Cases/KatalonicsBlog/Visual Test Cases/Create Baseline Image,Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:49,8.638s,PASSED
+Start listener action : beforeTestCase,Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.011s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.607s,PASSED
+browserName = getExecutedBrowser().getName(),Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.001s,PASSED
+scrollTimeout = 100,Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.000s,PASSED
+header = 0,Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.000s,PASSED
+footer = 0,Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.000s,PASSED
+dpr = 2,Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.000s,PASSED
+"if (browserName == ""IOS_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.001s,PASSED
+"if (browserName == ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.000s,PASSED
+"if (browserName != ""IOS_DRIVER"" && browserName != ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.134s,PASSED
+"theComponentURL = envURL1 + componentLocation + ""/"" + componentName + appendToURL",Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:41,0.001s,PASSED
+navigateToUrl(theComponentURL),Chrome 75.0.3770.100,,,2019-10-01 15:05:41,2019-10-01 15:05:42,1.087s,PASSED
+waitForPageLoad(5),Chrome 75.0.3770.100,,,2019-10-01 15:05:42,2019-10-01 15:05:42,0.017s,PASSED
+delay(6),Chrome 75.0.3770.100,,,2019-10-01 15:05:42,2019-10-01 15:05:48,6.003s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.002s,PASSED
+"log.logInfo(""Component Name: "" + componentName)",Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.002s,PASSED
+"log.logInfo(""actual URL: "" + theComponentURL)",Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.002s,PASSED
+"baseLineFile = resolveScreenshotFile($browserName + ""_"" + $componentName + ""_baseLine_component_page.png"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.001s,PASSED
+projectDir = Paths.get(getProjectDir()),Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.001s,PASSED
+reportDir = projectDir.resolve(baseLineImageFolder),Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.000s,PASSED
+Files.createDirectories(reportDir),Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.002s,PASSED
+pngFile = reportDir.resolve(fileName),Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.001s,PASSED
+return pngFile.toFile(),Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.000s,PASSED
+"takeEntirePage(getWebDriver(), baseLineFile, 500, scrollTimeout, header, footer, dpr)",Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:48,0.001s,PASSED
+"screenshot = viewportRetina(scrollTimeout, header, footer, dpr)).takeScreenshot(webDriver)",Chrome 75.0.3770.100,,,2019-10-01 15:05:48,2019-10-01 15:05:49,0.512s,PASSED
+"ImageIO.write(screenshot.getImage(), ""PNG"", file)",Chrome 75.0.3770.100,,,2019-10-01 15:05:49,2019-10-01 15:05:49,0.130s,PASSED
+comment(>>> wrote the baseLine component page image into $baseLineFile.toString()),Chrome 75.0.3770.100,,,2019-10-01 15:05:49,2019-10-01 15:05:49,0.007s,PASSED
+closeBrowser(),Chrome 75.0.3770.100,,,2019-10-01 15:05:49,2019-10-01 15:05:49,0.080s,PASSED
+,,,,,,,
+Test Cases/KatalonicsBlog/Visual Test Cases/Create Baseline Image,Chrome 75.0.3770.100,,,2019-10-01 15:05:49,2019-10-01 15:05:58,9.233s,PASSED
+Start listener action : beforeTestCase,Chrome 75.0.3770.100,,,2019-10-01 15:05:49,2019-10-01 15:05:49,0.014s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,,2019-10-01 15:05:49,2019-10-01 15:05:50,0.656s,PASSED
+browserName = getExecutedBrowser().getName(),Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.000s,PASSED
+scrollTimeout = 100,Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.000s,PASSED
+header = 0,Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.000s,PASSED
+footer = 0,Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.000s,PASSED
+dpr = 2,Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.001s,PASSED
+"if (browserName == ""IOS_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.000s,PASSED
+"if (browserName == ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.000s,PASSED
+"if (browserName != ""IOS_DRIVER"" && browserName != ""ANDROID_DRIVER"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.127s,PASSED
+"theComponentURL = envURL1 + componentLocation + ""/"" + componentName + appendToURL",Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:50,0.001s,PASSED
+navigateToUrl(theComponentURL),Chrome 75.0.3770.100,,,2019-10-01 15:05:50,2019-10-01 15:05:51,1.023s,PASSED
+waitForPageLoad(5),Chrome 75.0.3770.100,,,2019-10-01 15:05:51,2019-10-01 15:05:51,0.033s,PASSED
+delay(6),Chrome 75.0.3770.100,,,2019-10-01 15:05:51,2019-10-01 15:05:57,6.006s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.004s,PASSED
+"log.logInfo(""Component Name: "" + componentName)",Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.002s,PASSED
+"log.logInfo(""actual URL: "" + theComponentURL)",Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.002s,PASSED
+"baseLineFile = resolveScreenshotFile($browserName + ""_"" + $componentName + ""_baseLine_component_page.png"")",Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.001s,PASSED
+projectDir = Paths.get(getProjectDir()),Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.001s,PASSED
+reportDir = projectDir.resolve(baseLineImageFolder),Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.001s,PASSED
+Files.createDirectories(reportDir),Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.002s,PASSED
+pngFile = reportDir.resolve(fileName),Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.000s,PASSED
+return pngFile.toFile(),Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.000s,PASSED
+"takeEntirePage(getWebDriver(), baseLineFile, 500, scrollTimeout, header, footer, dpr)",Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:57,0.001s,PASSED
+"screenshot = viewportRetina(scrollTimeout, header, footer, dpr)).takeScreenshot(webDriver)",Chrome 75.0.3770.100,,,2019-10-01 15:05:57,2019-10-01 15:05:58,0.996s,PASSED
+"ImageIO.write(screenshot.getImage(), ""PNG"", file)",Chrome 75.0.3770.100,,,2019-10-01 15:05:58,2019-10-01 15:05:58,0.235s,PASSED
+comment(>>> wrote the baseLine component page image into $baseLineFile.toString()),Chrome 75.0.3770.100,,,2019-10-01 15:05:58,2019-10-01 15:05:58,0.003s,PASSED
+closeBrowser(),Chrome 75.0.3770.100,,,2019-10-01 15:05:58,2019-10-01 15:05:58,0.075s,PASSED

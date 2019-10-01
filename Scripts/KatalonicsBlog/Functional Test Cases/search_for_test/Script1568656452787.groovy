@@ -14,8 +14,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Open Browser'
 WebUI.openBrowser('')
 
+'Navigate to Katalonics Blog'
 WebUI.navigateToUrl('https://katalonics.blogspot.com/')
 
 WebUI.setText(findTestObject('Page_Katalonics/input_Search This Blog_q'), 'test')
@@ -24,7 +26,7 @@ WebUI.click(findTestObject('Object Repository/Page_Katalonics/div_Search This Bl
 
 WebUI.click(findTestObject('Object Repository/Page_Katalonics/input_Search This Blog_gsc-search-button'))
 
-WebUI.click(findTestObject('Object Repository/Page_Katalonics Search results for test/div_No posts matching the query test Show all posts'))
+WebUI.verifyTextPresent('No posts matching the query: test. Show all posts', false)
 
 WebUI.closeBrowser()
 
